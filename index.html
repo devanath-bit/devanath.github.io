@@ -3,38 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Devanath P R - Personal Portfolio</title>
+  <title>Devanath P R</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fefaf6;
+      background-color: #f9f9f9;
       color: #333;
       line-height: 1.6;
     }
-    .hero {
-      background: linear-gradient(to right, #2e4f4f, #3a7c6f);
+    .header {
+      background: #1a252f;
       color: white;
       text-align: center;
-      padding: 4em 1em;
-      min-height: 50vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      padding: 2em 1em;
     }
-    .hero h1 {
-      font-size: 2.8em;
+    .header h1 {
+      font-size: 2.5em;
       font-weight: 600;
       margin: 0;
       letter-spacing: 1px;
     }
-    .hero p {
-      font-size: 1.2em;
+    .header p {
+      font-size: 1.1em;
       font-weight: 300;
       margin: 0.5em 0;
       opacity: 0.9;
+    }
+    .nav {
+      background-color: #1a252f;
+      padding: 1em 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-top: 1px solid #2e3b4e;
+    }
+    .nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .nav li {
+      display: inline-block;
+      margin: 0 1em;
+    }
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+    .nav a:hover {
+      color: #ff6f61;
     }
     .container {
       max-width: 900px;
@@ -43,7 +67,7 @@
     }
     .about h2 {
       font-size: 2em;
-      color: #2e4f4f;
+      color: #1a252f;
       text-align: center;
       margin-bottom: 1em;
       font-weight: 600;
@@ -54,24 +78,24 @@
       color: #555;
     }
     .about a {
-      color: #3a7c6f;
+      color: #ff6f61;
       text-decoration: none;
       font-weight: 400;
       transition: color 0.3s ease;
     }
     .about a:hover {
-      color: #1a3c34;
+      color: #e63950;
       text-decoration: underline;
     }
     footer {
-      background-color: #2e4f4f;
+      background-color: #1a252f;
       color: white;
       text-align: center;
       padding: 1.5em 0;
       font-size: 0.9em;
     }
     footer a {
-      color: #a3d9c9;
+      color: #ff6f61;
       text-decoration: none;
       margin: 0 0.5em;
       transition: color 0.3s ease;
@@ -79,25 +103,11 @@
     footer a:hover {
       color: white;
     }
-    .btn {
-      display: inline-block;
-      padding: 0.8em 1.5em;
-      background-color: #3a7c6f;
-      color: white;
-      text-decoration: none;
-      border-radius: 25px;
-      margin-top: 1em;
-      font-weight: 400;
-      transition: background-color 0.3s ease;
-    }
-    .btn:hover {
-      background-color: #1a3c34;
-    }
     @media (max-width: 600px) {
-      .hero h1 {
+      .header h1 {
         font-size: 2em;
       }
-      .hero p {
+      .header p {
         font-size: 1em;
       }
       .container {
@@ -106,17 +116,27 @@
       .about h2 {
         font-size: 1.6em;
       }
+      .nav li {
+        display: block;
+        margin: 0.5em 0;
+      }
     }
   </style>
 </head>
 <body>
-  <section class="hero">
-    <h1>[Your Name]</h1>
-    <p>Your gateway to my world of [your passion, e.g., ideas, projects, or research]</p>
-    <a href="#about" class="btn">Discover More</a>
-  </section>
+  <header class="header">
+    <h1>Hi, I'm Devanath</h1>
+    <p>Welcome to my personal webpage!</p>
+  </header>
+  <nav class="nav">
+    <ul>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="opinion.html">Opinion</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
   <div class="container">
-    <section class="about" id="about">
+    <section class="about">
       <h2>About Me</h2>
       <p>Hello! I'm [Your Name], a [your profession, e.g., designer, researcher, student] based in [your city]. I specialize in [your field or focus, e.g., web development, scientific research, or education], currently working/studying at [your workplace/university, e.g., ABC Institute].</p>
       <p>I hold a [your degree, e.g., Master’s in Physics] from [your institution]. My recent work includes [briefly describe a project or achievement, e.g., building a mobile app or publishing a paper on X].</p>
